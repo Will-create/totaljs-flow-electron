@@ -1,0 +1,73 @@
+{
+  "name": "totaljs-flow-electron",
+  "version": "1.2.0",
+  "description": "Node-red alternative framework for building fast and reliable workflows, data processing, data transformation automations and many kind of applications",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "repository": "https://github.com/Will-create/totaljs-flow-electron",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
+  "keywords": [
+    "Electron",
+    "Total.js",
+    "Flow",
+    "Node-red",
+    "Total.js-Flow"
+  ],
+  "build": {
+    "appId": "com.totaljs.flow",
+    "productName": "Total.js Flow",
+    "win": {
+      "target": "nsis",
+      "icon": "icon/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "icon/icon.icns"
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": "x64"
+        },
+        {
+          "target": "deb",
+          "arch": "x64"
+        },
+        {
+          "target": "snap",
+          "arch": "x64"
+        },
+        {
+          "target": "deb",
+          "arch": "x64"
+        }
+      ],
+      "icon": "icon/icon.png",
+      "category": "Network,Developement,Utility"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "author": {
+    "name": "Total.js",
+    "email": "info@totaljs.com",
+    "url": "https://totaljs.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^23.1.0",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "electron-updater": "^5.3.0",
+    "total4": "^0.0.79"
+  }
+}

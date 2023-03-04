@@ -1,0 +1,13 @@
+{
+	"notify": true,
+	"name": "Total.js Flow v10",
+	"env": "dev",
+	"components": "https://cdn.totaljs.com/flowstream/webcomponents/db.json",
+	"token": "1c8018t8ggqc0p15dpr8t6wm18hfgc",
+	"user": {
+		"id": "ysdt001pp41d",
+		"login": "rwg11jiw9n",
+		"password": "b42e070fefc3ccfdb851c8752fd0ca2ad45d64e02198826861346fb6ba452a32",
+		"raw": "fppz9f1e1f"
+	}
+}
